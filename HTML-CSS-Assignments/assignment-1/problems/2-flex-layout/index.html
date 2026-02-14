@@ -1,41 +1,31 @@
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flex Layout</title>
-    <link rel="stylesheet" href="./index.css">
-
-    <style>
-        .container {
-            width: 1200px;
+</head>
+<style>
+    body{
+           width: 1200px;
             margin: 0 auto;
             display: flex;
-        }
-
-        .left {
-            background-color: red;
-            flex-grow: 1;
-        }
-
-        .right {
-            background-color: blue;
-            flex-grow: 2;
-        }
-    </style>
-</head>
-
+    }
+    .left-box{
+        background-color: blue;
+       flex-grow: 1;
+    }
+    .right-box{
+        background-color: red;
+                flex-grow: 2;
+    }
+</style>
 <body>
-    <div class="container">
-        <div class="left">
-            <h1>Left</h1>
-        </div>
-        <div class="right">
-            <h1>Right</h1>
-        </div>
+    <div class="left-box">
+        <p class="text">Left</p>
+    </div>
+    <div class="right-box">
+        <p class="text">Right</p>
     </div>
 </body>
-
 </html>
