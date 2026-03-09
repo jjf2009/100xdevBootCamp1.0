@@ -19,17 +19,5 @@ int main() {
         cout << endl;
     }
 
-    // Lower half
-    // for (int i = n - 1; i >= 1; i--) {
-    //     for (int j = 1; j <= i*2; j++) {
-    //     if(j==2*i||j==i){
-    //          cout << "> ";
-    //         }else{
-    //       cout<<"  ";
-    //         }
-   
-    //     }
-    //     cout << endl;
-    // }
     return 0;
 }

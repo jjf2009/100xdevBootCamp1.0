@@ -1,23 +1,26 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-void printprime(int n ){
-    while(n>0){
-        if(n%i==0){
-            cout<<"Not Prime";
-            return;
+void printPrimes(int n) {
+    bool first = true;
+    for (int num = 2; num <= n; num++) {
+        bool isPrime = true;
+        for (int i = 2; i * i <= num; i++) {
+            if (num % i == 0) {
+                isPrime = false;
+                break;
+            }
         }
-
+        if (isPrime) {
+            if (!first) cout << " ";
+            cout << num;
+            first = false;
+        }
     }
-    cout<<"Prime";
-    return;
 }
 
-
-int main(){
-    int n ;
-    cin>>n;
-    printprime(n);
-
-
+int main() {
+    int n;
+    cin >> n;
+    printPrimes(n);
 }
